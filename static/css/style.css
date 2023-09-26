@@ -1,0 +1,122 @@
+/* 메인 */
+body{
+    background-color: bisque;
+}
+@font-face {
+	font-family: 'Ycomputer-Regular';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/Ycomputer-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GangwonEdu_OTFBoldA';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+#main {
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: pink;
+    text-align: center;
+    width: 500px;
+    height: 800px;
+}
+#title {
+    font-family: 'Ycomputer-Regular';
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: move;
+    font-weight: bold;
+}
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 30px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+	color: #b21010;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* 채팅 영역 */
+#chat {
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    height: 93%;
+    width: 100%;
+    overflow-y: auto;
+  }
+/* 접속 알림 */
+.connect {
+    width: 90%;
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin: 5px auto 5px auto;
+}
+/* 접속 종료 알림 */
+.disconnect {
+    width: 90%;
+    text-align: center;
+    background-color: indianred;
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin: 5px auto 5px auto;
+}
+/* 내가 보낸 메시지 */
+.me {
+    max-width: 70%;
+    background-color: #ffd600;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin: 5px 10px 5px auto;
+    text-align: right;
+}
+/* 상대방이 보낸 메시지 */
+.other {
+    max-width: 70%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin: 5px auto 5px 10px;
+    text-align: left;
+}
+/* 입력창 */
+#sendtxt{
+    background: #eee;
+    padding: 3px;
+    width: 99%;
+    border-radius: 0px 0px 10px 10px;
+}
+div input {
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 17px;
+    border: 0; 
+    border-radius: 5px;
+    padding: 10px; 
+    width: 81%; 
+}
+div button {
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 17px;
+    width: 12%; 
+    border-radius: 5px;
+    background: #ffd600; 
+    border: none; 
+    padding: 10px; 
+  }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>실시간 채팅</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/index.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="title">
+                RETRO CHAT
+                <span class="close">&times;</span>
+            </div>
+            <div id="chat"></div>
+                <div id="sendtxt">
+                    <input type="text" id="test" placeholder="메시지를 입력해주세요..">
+                    <button onclick="send()">전송</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
